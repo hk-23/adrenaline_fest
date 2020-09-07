@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="theme-color" content="#2c82ba">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adrenaline Fest | Homepage</title>
+    <title>Adrenaline Fest | Blog</title>
     <meta name="Description" content="Want to read something interesting? You are at the right place to explore beyond Knowledge!">
-    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+    <link rel="shortcut icon" type="image/png" href="./../static/logo.png"/>
     <!-- Jquery Complete -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Bootstrap Latest compiled and minified CSS -->
@@ -77,6 +77,9 @@ p.varela {
  .dis-1 {
     font-size: 2.3rem;
  }
+ .dis-3 {
+    font-size: 1rem;
+ }
 @media (min-width: 576px) {
   .dis-1 {
     font-size:3rem;
@@ -85,6 +88,9 @@ p.varela {
 @media (min-width: 768px) {
   .dis-1 {
     font-size:4rem;
+  }
+  .dis-3 {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 992px) {
@@ -110,8 +116,9 @@ p.varela {
 	<header>
      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a href="#" class="navbar-brand">
-            <img class="rounded-lg" src="./static/logo.png" alt="af logo" style="width: 50px;height: auto;">
+            <img class="rounded-lg" src="./../static/logo.png" alt="af logo" style="width: 50px;height: auto;">
         </a>
+        <span class="text-white merienda dis-3" style="">Adrenaline Fest</span>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menubar">
             <span class="navbar-toggler-icon"></span>
@@ -135,83 +142,7 @@ p.varela {
      </nav>   
     </header>
 	<main style="min-height: 90vh;">
-        <!-- Landing Page Section -->
-        <section class="container-fluid bg-white">
-            <div class="row py-4 d-flex align-content-center" style="min-height: 90vh;">
-                <div class="col-12 col-lg-8 my-lg-auto my-3 text-center ">
-                    <h1 class="merienda dis-1">Adrenaline Fest</h1>
-                    <p class="merienda">&#8220;A Place To Explore Beyond Knowledge&#8221;</p>
-                    <!-- <h1 class="sacramento dis-1">Adrenaline Fest</h1> -->
-                    <a class="btn btn-success shadow my-4 d-none d-lg-inline-block" href="#aboutus">Get Started</a>
-                </div>
-                <div class="col-8 col-md-6 col-lg-4 col text-center my-auto mx-auto d-lg-block">
-                    <img src="./static/landing.png" alt="landing page vector image" class="w-100">
-                    <a class="btn btn-success shadow my-4 d-inline-block d-lg-none" href="#aboutus">Get Started</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="container varela mb-3" style="line-height: 2.5rem;">
-            <h1 class="text-center" id="aboutus">About Us</h1>
-            <p class="text-justify" style="font-size: 120%">
-                The Internet is a place for everything and for everyone and we are for such netizens
-                who wants to refresh their brain. Let it be Arts or Entertainment, We feed for your
-                craving to the fullest. Are you looking for any articles to read or seeking for inspirations 
-                and motivations or just tired of surfing the internet and want something interesting,
-                we have got you. Adrenaline Fest is a one-stop place for all these things.
-
-        </section>
-        <section class="container my-3">
-            <article>
-                <h1 class="text-center varela"></h1>
-            </article>
-            <!-- Blogging -->
-            <a class="card px-3 my-md-4 shadow rounded-lg unstyled-link" href="#">
-            <div class="row d-flex flex-row-reverse align-content-center">
-                <div class="col-12 col-lg-4 my-auto text-center">
-                    <img src="./static/blog1.jpg" style="width: 100%;">
-                </div>
-                <div class="col-12 col-lg-8 my-auto noto">
-                    <h2 class="text-center noto">Blogging</h2>
-                    <p class="varela mt-3 text-center">
-                        Our Blog has various interesting articles on different topics. Each articles are well curated for the readers 
-                        which provides knowledge with fun!
-                    </p>
-                </div>
-            </div>
-            </a>
-            <br>
-            <!-- Memes -->
-            <a class="card px-3 my-md-4 shadow rounded-lg unstyled-link" href="#">
-            <div class="row d-flex align-content-center">
-                <div class="col-12 col-lg-4 my-auto text-center">
-                    <img class="rounded-circle my-3" src="./static/social2.jpg" style="width: 60%;">
-                </div>
-                <div class="col-12 col-lg-8 my-auto noto">
-                    <h2 class="text-center noto">Memes</h2>
-                    <p class="varela mt-3 text-center">
-                        We have a huge collection of memes with 100+ tags. Search for your favourite meme and Enjoy.
-                    </p>
-                </div>
-            </div>
-            </a>
-            <br>
-            <!-- Quotes -->
-            <a class="card px-3 my-md-4 shadow rounded-lg unstyled-link" href="#">
-            <div class="row d-flex flex-row-reverse align-content-center">
-                <div class="col-12 col-lg-4 my-auto text-center">
-                    <img class="rounded-circle my-3" src="./static/quote1.jpg" style="width: 60%;">
-                </div>
-                <div class="col-12 col-lg-8 my-auto noto">
-                    <h2 class="text-center noto">Quotes</h2>
-                    <p class="varela mt-3 text-center">
-                        Get your daily dose of inspiration with our &#8220;Quote of the Day&#8221; and
-                        stay motivated. 
-                    </p>
-                </div>
-            </div>
-            </a>
-        </section>
+        
 	</main>
 	<footer class="container-fluid bg-dark text-white">
         <section class="row">
